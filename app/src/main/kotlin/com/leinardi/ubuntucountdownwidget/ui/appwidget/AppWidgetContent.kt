@@ -84,8 +84,8 @@ fun AppWidgetContent(
             ) {
                 when (state) {
                     is AppWidgetState.ComingSoon -> Image(
-                        provider = ImageProvider(R.drawable.ubuntu_logo_circle),
-                        contentDescription = null,
+                        provider = ImageProvider(R.drawable.ubuntu_logo_circle), //Change Image Here
+                        contentDescription = "Days Left",
                         contentScale = ContentScale.Fit,
                         modifier = GlanceModifier
                             .padding(bottom = size.value.dp / 6)
@@ -125,10 +125,10 @@ fun AppWidgetContent(
                     Image(
                         provider = if (state.darkTheme) {
                             ImageProvider(
-                                R.drawable.ubuntu_logo_dark,
+                                R.drawable.ubuntu_logo_dark, //Change Image Here
                             )
                         } else {
-                            ImageProvider(R.drawable.ubuntu_logo_light)
+                            ImageProvider(R.drawable.ubuntu_logo_light) //Change Image Here
                         },
                         contentDescription = null,
                         contentScale = ContentScale.Fit,
